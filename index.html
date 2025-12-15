@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">П.С.</div>
+            <nav class="nav-menu">
+                <a href="../index.html" class="nav-btn">Головна</a>
+                <a href="../blocks/index.html" class="nav-btn">Блоки</a>
+                <a href="../form/index.html" class="nav-btn active">Форма</a>
+                <a href="../memory/memory.html" class="nav-btn">Свічка</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h2>Анкета користувача</h2>
+        
+        <form action="#" method="post">
+            
+            <div class="form-group">
+                <label for="user_name">Прізвище, ім'я, по батькові <span class="required">*</span></label>
+                <input type="text" id="user_name" name="user_name" placeholder="Іванов Іван Іванович" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user_email">Е-mail</label>
+                <input type="email" id="user_email" name="user_email" placeholder="example@mail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="user_birthdate">Дата народження <span class="required">*</span></label>
+                <input type="date" id="user_birthdate" name="user_birthdate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="user_sex">Стать <span class="required">*</span></label>
+                <select id="user_sex" name="user_sex" required>
+                    <option value="" disabled selected>Оберіть стать</option>
+                    <option value="male">Чоловіча</option>
+                    <option value="female">Жіноча</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Відправити</button>
+                <button type="reset" class="btn-reset">Очистити</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
